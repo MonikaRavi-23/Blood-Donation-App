@@ -13,7 +13,7 @@ The app bridges the gap between **donors** and **recipients**, ensuring quick ac
 - OTP verification for secure access  
 - User profile creation & management  
 
-### 🅰️🅱️🆎🅾️ Donor Management
+###  Donor Management
 - Register as a blood donor  
 - View nearby donors and their details  
 - Search donors by blood group  
