@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F5F5"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/rounded_card"
+        android:padding="24dp"
+        android:elevation="6dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Awareness - Every Drop Counts"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#C62828"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Awareness Content -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🩸 Why Blood Donation Matters\n• Every 2 seconds, someone in the world needs blood.\n• A single donation can save up to 3 lives.\n• Hospitals often face shortages during emergencies and accidents.\n\n👥 Who Can Donate?\n• Age: 18–60 years\n• Weight: Above 50kg\n• Hemoglobin level ≥ 12.5 g/dl\n• Healthy, with no major illness in last 6 months.\n\n❌✔️ Myths vs Facts\n✖ Myth: Donating blood makes you weak.\n✔ Fact: Body replenishes blood in 24–48 hours.\n✖ Myth: Only rare blood groups are needed.\n✔ Fact: All blood types are equally important.\n✖ Myth: It’s unsafe to donate.\n✔ Fact: Donor safety is ensured with sterile equipment.\n\n💡 How You Can Help\n• Donate regularly (every 3 months).\n• Register as a donor in the app.\n• Respond to alerts when hospitals request urgent blood.\n• Share awareness with family &amp; friends."
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:lineSpacingExtra="6dp"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+</ScrollView>

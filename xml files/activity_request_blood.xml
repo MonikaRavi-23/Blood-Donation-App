@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mild_form_bg"
+    android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/form_card_bg"
+            android:padding="24dp"
+            android:gravity="center"
+            android:elevation="8dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp">
+
+            <!-- Patient Name -->
+            <EditText
+                android:id="@+id/patientNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Patient Name"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#E57373" />
+
+            <!-- Age -->
+            <EditText
+                android:id="@+id/AgeEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:inputType="number"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#E57373" />
+
+            <!-- Attendee Mobile -->
+            <EditText
+                android:id="@+id/attendeeMobileEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Attendee Mobile"
+                android:inputType="phone"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#E57373" />
+
+            <!-- Units Required -->
+            <EditText
+                android:id="@+id/unitsEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Units Required"
+                android:inputType="number"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#E57373" />
+
+            <!-- Required Date -->
+            <EditText
+                android:id="@+id/requiredDateEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Required Date (DD/MM/YYYY)"
+                android:focusable="false"
+                android:clickable="true"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#E57373" />
+
+            <!-- Blood Type Spinner -->
+            <Spinner
+                android:id="@+id/bloodTypeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Blood Group Spinner -->
+            <Spinner
+                android:id="@+id/bloodGroupSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Urgency Spinner -->
+            <Spinner
+                android:id="@+id/urgencySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Hospital Name -->
+            <EditText
+                android:id="@+id/hospitalNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hospital Name"
+                android:inputType="text"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#E57373" />
+
+            <!-- Hospital Address (click → opens map) -->
+            <EditText
+                android:id="@+id/hospitalAddressEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location (Tap to Select Location)"
+                android:focusable="false"
+                android:clickable="true"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#E57373" />
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit Request"
+                android:backgroundTint="#E53935"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

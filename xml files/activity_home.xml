@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mild_red_bg"
+    android:fitsSystemWindows="true">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_media_previous"
+        android:background="@android:color/transparent"
+        android:contentDescription="Back"
+        app:tint="#E53935"
+        android:layout_margin="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/backBtn"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="20dp">
+
+            <!-- Welcome Card -->
+            <LinearLayout
+                android:id="@+id/welcomeCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/card_bg"
+                android:elevation="8dp">
+
+                <TextView
+                    android:id="@+id/welcomeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome, Kavin!"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#E53935"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/userIdTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User ID:"
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/bloodGroupTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Group:"
+                    android:textSize="14sp"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+            <!-- Buttons Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/requestBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="REQUEST FOR BLOOD"
+                    android:backgroundTint="#E53935"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/donateBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DONATE"
+                    android:backgroundTint="#E53935"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/contributeBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CONTRIBUTE"
+                    android:backgroundTint="#D32F2F"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/awarenessBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="AWARENESS"
+                    android:backgroundTint="#8E24AA"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/awarenessTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="💉 Every donation creates a lifeline of hope 💖"
+                    android:textColor="#E53935"
+                    android:textStyle="italic"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14sp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Emergency Section -->
+            <LinearLayout
+                android:id="@+id/emergencySection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/emergencyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🚨 EMERGENCY 🚨"
+                    android:textColor="#D32F2F"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="12dp" />
+
+                <Button
+                    android:id="@+id/callPoliceBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CALL POLICE"
+                    android:backgroundTint="#E53935"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp" />
+
+                <Button
+                    android:id="@+id/callAmbulanceBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CALL AMBULANCE"
+                    android:backgroundTint="#D32F2F"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

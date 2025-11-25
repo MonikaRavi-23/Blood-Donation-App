@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Emergency Icon -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🚨 EMERGENCY REQUEST"
+            android:textColor="#D32F2F"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Patient -->
+        <TextView
+            android:id="@+id/patientTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient: -"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <!-- Hospital -->
+        <TextView
+            android:id="@+id/hospitalTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital: -"
+            android:textSize="14sp"/>
+
+        <!-- Units Required -->
+        <TextView
+            android:id="@+id/unitsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Units Required: -"
+            android:textSize="14sp"/>
+
+        <!-- Age -->
+        <TextView
+            android:id="@+id/ageTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age: -"
+            android:textSize="14sp"/>
+
+        <!-- Blood Group -->
+        <TextView
+            android:id="@+id/bloodGroupTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Group: -"
+            android:textSize="14sp"/>
+
+        <!-- Blood Type -->
+        <TextView
+            android:id="@+id/bloodTypeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Type: -"
+            android:textSize="14sp"/>
+
+        <!-- User -->
+        <TextView
+            android:id="@+id/userTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Requested By (User): -"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

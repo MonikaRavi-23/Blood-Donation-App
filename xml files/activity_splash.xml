@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E53935"
+    android:gravity="center">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/logoIv"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/apps_logo"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+
+        android:layout_centerInParent="true" />
+
+    <!-- Quote Text -->
+    <TextView
+        android:id="@+id/quoteTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The best gift you can give is the gift of life."
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:layout_below="@id/logoIv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>
